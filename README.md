@@ -7,3 +7,4 @@ I would like to stress there must be only one `c` file, one `js` file and a sing
 However these file can be generated in a more "developer friendly manner".  
 You could easily have multiple c files, using typescript in place of js etc. What matters is that the final distributed tar has this structure.
 
+`[module]` in filenames is replaced with the module name. The same for `__MODULE__` in the source files.
