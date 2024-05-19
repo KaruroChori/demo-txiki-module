@@ -1,3 +1,5 @@
-export function HelloWorld(){
-    return 42
+export default  {
+	HelloWorld : () =>{
+	    return 42
+	}
 }
