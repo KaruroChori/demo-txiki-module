@@ -1,8 +1,8 @@
 /**
  * Foreign Function Interface module.
  *
- * @module __MODULE__
+ * @module tjs:__MODULE__
  */
-declare module '__MODULE__'{
-    export function HelloWorld():number;
+declare module 'tjs:__MODULE__' {
+    export function HelloWorld(): number;
 }
