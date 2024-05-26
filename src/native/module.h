@@ -10,5 +10,3 @@ void tjs__mod___MODULE___init(JSContext *ctx, JSValue ns);
 #ifdef __cplusplus
 }
 #endif
-
-#include "./header/test.h"
