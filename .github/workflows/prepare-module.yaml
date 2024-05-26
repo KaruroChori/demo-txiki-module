@@ -8,6 +8,7 @@ name: Upload Distribution package
 
 jobs:
   build:
+    permissions: write-all
     name: Upload Release Asset
     runs-on: ubuntu-latest
     steps:
@@ -17,7 +18,7 @@ jobs:
         run: |
           bun install
           bun run bundle
-          tar -czvf module.tar.gz ./dist
+          tar -czvf module.tar.gz dist
       - name: Add artifact
         uses: softprops/action-gh-release@v1
         with:
@@ -25,3 +26,4 @@ jobs:
             module.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
