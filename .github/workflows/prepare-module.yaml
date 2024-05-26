@@ -9,7 +9,7 @@ name: Upload Distribution package
 jobs:
   build:
     name: Upload Release Asset
-    runs-on: alpine-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: antongolub/action-setup-bun@v1.13.2
