@@ -1,10 +1,5 @@
 {
-    "lvgl": {
-        "repo": "https://github.com/lvgl/lvgl",
-        "branch": "release/v8.4"
-    },
-    "lv-drivers":{
-        "repo": "https://github.com/lvgl/lv_drivers",
-        "branch": "master"
-    }
+  "suggested-name": "demo",
+  "native-deps": {},
+  "module-deps": {}
 }
