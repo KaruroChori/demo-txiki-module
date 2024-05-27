@@ -1,4 +1,6 @@
 {
+  "module-version": [2, 1, 0],
+  "runtime-version": [0, 4, 1],
   "suggested-name": "demo",
   "native-deps": {},
   "module-deps": {}

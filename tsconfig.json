@@ -6,7 +6,8 @@
     "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "typeRoots": ["./node_modules/@types"],
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./runtime/docs"],
     "types": ["node"]
   }
 }

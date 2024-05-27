@@ -7,3 +7,4 @@
 # Development testing
 /builddir
 /build
+/runtime

@@ -17,6 +17,7 @@ jobs:
       - name: Build dist
         run: |
           bun install
+          bun run runtime-types
           bun run bundle
           tar -czvf module.tar.gz dist
       - name: Add artifact
@@ -26,4 +27,3 @@ jobs:
             module.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
