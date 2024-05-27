@@ -4,7 +4,10 @@
   "description": "Demo module for txiki.js",
   "type": "module",
   "scripts": {
-    "bundle": "bun ./scripts/bundle.ts"
+    "bundle": "bun ./scripts/bundle.ts",
+    "dev:setup": "meson setup build",
+    "dev:build": "cd build && meson compile",
+    "dev:test": "cd build && meson test"
   },
   "dependencies": {
     "@sinclair/typebox": "^0.32.31"
