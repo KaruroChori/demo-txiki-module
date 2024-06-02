@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Demo module for txiki.js",
   "type": "module",
+  "packageManager": "bun@1.1.4",
   "scripts": {
     "runtime-types": "bun ./scripts/runtime.ts fast-clone",
     "bundle": "bun ./scripts/bundle.ts",
