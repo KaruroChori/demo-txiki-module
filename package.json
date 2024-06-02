@@ -11,9 +11,6 @@
     "dev:build": "cd build && meson compile",
     "dev:test": "cd build && meson test"
   },
-  "dependencies": {
-    "@sinclair/typebox": "^0.32.31"
-  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
