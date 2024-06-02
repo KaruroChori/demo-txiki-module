@@ -7,7 +7,7 @@
   "scripts": {
     "runtime-types": "bun ./scripts/runtime.ts fast-clone",
     "bundle": "bun ./scripts/bundle.ts",
-    "dev:setup": "meson setup build",
+    "dev:setup": "rm -rf build && meson setup build --reconfigure",
     "dev:build": "cd build && meson compile",
     "dev:test": "cd build && meson test"
   },
