@@ -1,6 +1,6 @@
 {
   "name": "demo-txiki-module",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Demo module for txiki.js",
   "type": "module",
   "packageManager": "bun@1.1.4",
@@ -11,7 +11,7 @@
     "dev:build": "cd build && meson compile",
     "dev:test": "cd build && meson test"
   },
-  "author": "",
+  "author": "karurochari",
   "license": "MIT",
   "devDependencies": {
     "@types/bun": "^1.1.0",
