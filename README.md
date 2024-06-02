@@ -1,6 +1,6 @@
 ## What is this?
 
-In short, a default template for how you might organize your new shiny txiki module.  
+In short, a default template for how you might organize your new shiny [txiki](https://github.com/saghul/txiki.js) module.  
 If you are porting a library to txiki, your main priority should be to preserve as much as possible of the original repo structure to simplify merging fixes and features from upstream; so concession over a clearner structure like the one presented in this repo might be desirable.
 
 For context:
@@ -8,6 +8,8 @@ For context:
 - https://github.com/KaruroChori/txiki-modules the main repo discussing how modules are used.
 - https://github.com/saghul/txiki.js/discussions/514 the original discussion around this feature.
 - https://github.com/KaruroChori/txiki.js/tree/module-manager the only txiki branch currently supporting modules.
+
+You can find any missing feature or improvement set for future developments in the [todo list](./TODO.md)
 
 ### How to use this?
 
@@ -19,8 +21,8 @@ To use the demo module in your runtime, just add a key with the desired name (li
 The repository is designed assuming a blend of C/C++ & TS. For pure JS/TS libraries the structure of the repo can be simplified considerably.  
 You should have few tools already installed on your system:
 
-- **bun** as the JS runtime, in place of **node**. It works with TS, as packet manager and bundler, simplifying the build process for the module.
-- **meson** and its related dependencies as part of the build system to test the module standalone (it can be skipped if you don't like testing your code)
+- [bun](https://bun.sh/) as the JS runtime, in place of **node**. It works with TS, as packet manager and bundler, simplifying the build process for the module.
+- [meson](https://mesonbuild.com/) and its related dependencies as part of the build system to test the module standalone (it can be skipped if you don't like testing your code)
 
 ## Repository structure
 
@@ -75,6 +77,6 @@ TBW
 
 ## Development
 
-During development, [meson]() is used as a build system to compile and run standalone tests over the native code, so that you don't need txiki for that.  
+During development, **meson** is used as a build system to compile and run standalone tests over the native code, so that you don't need txiki for that.  
 JS tests in `/test/`should be used else to evaluate the module together with the runtime in the final distribution, but they are to be run as part of the txiki testsuite after the debug runtime has been built.
 Please, place any native development-specific file to support testing under `./src/dev`.
