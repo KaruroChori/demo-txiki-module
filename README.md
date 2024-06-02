@@ -9,6 +9,11 @@ For context:
 - https://github.com/saghul/txiki.js/discussions/514 the original discussion around this feature.
 - https://github.com/KaruroChori/txiki.js/tree/module-manager the only txiki branch currently supporting modules.
 
+### How to use this?
+
+This demo module can be used to test this functionality in txiki. If you don't need to build it or make your own module, the rest of this document can be ignored.  
+To use the demo module in your runtime, just add a key with the desired name (like `demo`) and as value the link to the artefact attached to each release, like [https://github.com/KaruroChori/demo-txiki-module/releases/download/v2.1.0/module.tar.gz](https://github.com/KaruroChori/demo-txiki-module/releases/download/v2.1.0/module.tar.gz).
+
 ## Required software
 
 The repository is designed assuming a blend of C/C++ & TS. For pure JS/TS libraries the structure of the repo can be simplified considerably.  
