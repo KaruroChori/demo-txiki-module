@@ -16,6 +16,11 @@ try {
     outdir: './dist/bundle/',
     external: ["tjs:*"],
     target: "bun",
+    minify: {
+      whitespace: true,
+      identifiers: false,
+      syntax: true,
+    },
   })
   await $`mv ./dist/bundle/index.js ./dist/bundle/[module].js`
 }
