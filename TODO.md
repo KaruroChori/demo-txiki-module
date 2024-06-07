@@ -2,5 +2,6 @@
 
 ## Nice to have
 
-- [ ] Expose CLI to interface with the test runtime, not just for building it.
+- [x] Expose CLI to interface with the test runtime, not just for building it.
 - [ ] Prepare actions to perform tests, both standalone and those using the test runtime.
+- [ ] Add examples of native functions being implemented, called by the ts code and later tested.
