@@ -1,4 +1,4 @@
 import { hello } from "tjs:__MODULE__"
-import { Assert } from "tjs:assert"
+import assert from 'tjs:assert';
 
-Assert.ok(true)
+assert.equal(true, true)
