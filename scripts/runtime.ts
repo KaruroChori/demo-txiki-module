@@ -45,4 +45,17 @@ program.command('full')
         await $`make all`.cwd(`${import.meta.dirname}/../runtime/`).quiet();
     })
 
+program.command('test')
+    .description('Run tests on the runtime')
+    .action(async () => {
+        await Bun.write("./runtime/modules.json", JSON.stringify({ ...(module["module-deps"] ?? {}), [module['suggested-name'] ?? 'self']: "../dist" }));
+        console.log('Compiling. The first time it will take a while...');
+        await $`./extras-helper.mjs refresh ${module['suggested-name'] ?? 'self'}`
+            .cwd(`${import.meta.dirname}/../runtime/`)
+            .quiet();
+        await $`make js`.cwd(`${import.meta.dirname}/../runtime/`).quiet();
+        await $`make all`.cwd(`${import.meta.dirname}/../runtime/`).quiet();
+        await $`make tests`.cwd(`${import.meta.dirname}/../runtime/`);
+    })
+
 await program.parseAsync();

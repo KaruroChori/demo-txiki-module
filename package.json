@@ -5,11 +5,13 @@
   "type": "module",
   "packageManager": "bun@1.1.4",
   "scripts": {
-    "runtime-types": "bun ./scripts/runtime.ts fast-clone",
-    "bundle": "bun ./scripts/bundle.ts",
-    "dev:setup": "rm -rf build && meson setup build --reconfigure",
-    "dev:build": "cd build && meson compile",
-    "dev:test": "cd build && meson test"
+    "runtime:only-types": "bun ./scripts/runtime.ts fast-clone",
+    "runtime:full": "bun ./scripts/runtime.ts clone",
+    "bundle:build": "bun ./scripts/bundle.ts",
+    "runtime:test": "bun ./scripts/runtime.ts test",
+    "dev:setup": "rm -rf ./build && meson setup build --reconfigure",
+    "dev:build": "cd ./build && meson compile",
+    "dev:test": "cd ./build && meson test"
   },
   "author": "karurochari",
   "license": "MIT",
